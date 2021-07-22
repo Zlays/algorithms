@@ -1,7 +1,9 @@
+package medium;
+
 import it.zlays.models.UniquePathInput;
-import it.zlays.unique_path.UniquePathsBase;
-import it.zlays.unique_path.UniquePathsBottomUp;
-import it.zlays.unique_path.UniquePathsMemo;
+import it.zlays.medium.unique_path.UniquePathsBase;
+import it.zlays.medium.unique_path.UniquePathsBottomUp;
+import it.zlays.medium.unique_path.UniquePathsMemo;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;

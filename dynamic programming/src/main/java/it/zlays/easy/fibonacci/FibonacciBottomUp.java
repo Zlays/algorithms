@@ -1,4 +1,4 @@
-package it.zlays.fibonacci;
+package it.zlays.easy.fibonacci;
 
 import it.zlays.utils.Trackerd;
 

@@ -1,5 +1,7 @@
-import it.zlays.ladder.LadderBase;
-import it.zlays.ladder.LadderMemo;
+package medium;
+
+import it.zlays.medium.ladder.LadderBase;
+import it.zlays.medium.ladder.LadderMemo;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;

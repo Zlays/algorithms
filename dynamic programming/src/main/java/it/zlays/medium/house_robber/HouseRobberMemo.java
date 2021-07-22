@@ -1,4 +1,4 @@
-package it.zlays.house_robber;
+package it.zlays.medium.house_robber;
 
 import it.zlays.utils.Trackerd;
 

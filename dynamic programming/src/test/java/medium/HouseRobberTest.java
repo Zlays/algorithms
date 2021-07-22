@@ -1,6 +1,8 @@
-import it.zlays.house_robber.HouseRobberBase;
-import it.zlays.house_robber.HouseRobberBottomUp;
-import it.zlays.house_robber.HouseRobberMemo;
+package medium;
+
+import it.zlays.medium.house_robber.HouseRobberBase;
+import it.zlays.medium.house_robber.HouseRobberBottomUp;
+import it.zlays.medium.house_robber.HouseRobberMemo;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;

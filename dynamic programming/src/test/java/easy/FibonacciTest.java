@@ -1,6 +1,8 @@
-import it.zlays.fibonacci.FibonacciBase;
-import it.zlays.fibonacci.FibonacciBottomUp;
-import it.zlays.fibonacci.FibonacciMemo;
+package easy;
+
+import it.zlays.easy.fibonacci.FibonacciBase;
+import it.zlays.easy.fibonacci.FibonacciBottomUp;
+import it.zlays.easy.fibonacci.FibonacciMemo;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;

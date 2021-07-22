@@ -1,4 +1,4 @@
-package it.zlays.unique_path_obstacle;
+package it.zlays.medium.unique_path_obstacle;
 
 import it.zlays.utils.Trackerd;
 

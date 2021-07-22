@@ -1,6 +1,8 @@
-import it.zlays.unique_path_obstacle.UniquePathsObstacleBase;
-import it.zlays.unique_path_obstacle.UniquePathsObstacleBottomUp;
-import it.zlays.unique_path_obstacle.UniquePathsObstacleMemo;
+package medium;
+
+import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBase;
+import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBottomUp;
+import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleMemo;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;

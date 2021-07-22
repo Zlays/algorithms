@@ -1,4 +1,4 @@
-package it.zlays.unique_path;
+package it.zlays.medium.unique_path;
 
 import it.zlays.models.UniquePathInput;
 import it.zlays.utils.Trackerd;
