@@ -1,44 +1,40 @@
 import it.zlays.unique_path_obstacle.UniquePathsObstacleBase;
+import it.zlays.unique_path_obstacle.UniquePathsObstacleBottomUp;
 import it.zlays.unique_path_obstacle.UniquePathsObstacleMemo;
-import org.junit.Assert;
 import org.junit.Test;
+import utils.BasicTest;
+import utils.TestCase;
 
-public class UniquePathObstacleTest {
+public class UniquePathObstacleTest extends BasicTest< Long, int[][] > {
 	
 	@Test
 	public void uniquePathObstacleBaseTest( ) {
-		UniquePathsObstacleBase uniquePathsObstacleBase = new UniquePathsObstacleBase( );
-		
-		int[][] grid = { { 0 } };
-		Assert.assertEquals( 1, ( long ) uniquePathsObstacleBase.run( grid ) );
-		grid = new int[][] { { 1 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleBase.run( grid ) );
-		grid = new int[][] { { 1 }, { 0 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleBase.run( grid ) );
-		grid = new int[][] { { 0, 0 }, { 0, 0 } };
-		Assert.assertEquals( 2, ( long ) uniquePathsObstacleBase.run( grid ) );
-		grid = new int[][] { { 0, 0 }, { 1,1 },{ 0, 0 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleBase.run( grid ) );
-		grid = new int[][] { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
-		Assert.assertEquals( 2, ( long ) uniquePathsObstacleBase.run( grid ) );
+		UniquePathsObstacleBase uniquePathsObstacle = new UniquePathsObstacleBase( );
+		this.equalsAll( uniquePathsObstacle );
 	}
 	
 	@Test
 	public void uniquePathObstacleMemoTest( ) {
-		UniquePathsObstacleMemo uniquePathsObstacleMemo = new UniquePathsObstacleMemo( );
-		
-		int[][] grid = { { 0 } };
-		Assert.assertEquals( 1, ( long ) uniquePathsObstacleMemo.run( grid ) );
-		grid = new int[][] { { 1 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleMemo.run( grid ) );
-		grid = new int[][] { { 1 }, { 0 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleMemo.run( grid ) );
-		grid = new int[][] { { 0, 0 }, { 0, 0 } };
-		Assert.assertEquals( 2, ( long ) uniquePathsObstacleMemo.run( grid ) );
-		grid = new int[][] { { 0, 0 }, { 1,1 },{ 0, 0 } };
-		Assert.assertEquals( 0, ( long ) uniquePathsObstacleMemo.run( grid ) );
-		grid = new int[][] { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
-		Assert.assertEquals( 2, ( long ) uniquePathsObstacleMemo.run( grid ) );
+		UniquePathsObstacleMemo uniquePathsObstacle = new UniquePathsObstacleMemo( );
+		this.equalsAll( uniquePathsObstacle );
 	}
 	
+	@Test
+	public void uniquePathObstacleBottomUpTest( ) {
+		UniquePathsObstacleBottomUp uniquePathsObstacle = new UniquePathsObstacleBottomUp( );
+		this.equalsAll( uniquePathsObstacle );
+	}
+	
+	@Override
+	public TestCase< Long, int[][] >[] getCases( ) {
+		return new TestCase[] {
+				new TestCase( 1L, new int[][] { { 0 } } ),
+				new TestCase( 0L, new int[][] { { 1 } } ),
+				new TestCase( 0L, new int[][] { { 1 }, { 0 } } ),
+				new TestCase( 0L, new int[][] { { 0 }, { 1 } } ),
+				new TestCase( 2L, new int[][] { { 0, 0 }, { 0, 0 } } ),
+				new TestCase( 0L, new int[][] { { 0, 0 }, { 1, 1 }, { 0, 0 } } ),
+				new TestCase( 2L, new int[][] { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } } )
+		};
+	}
 }

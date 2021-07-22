@@ -1,7 +1,6 @@
 package it.zlays.fibonacci;
 
 import it.zlays.utils.Trackerd;
-import org.junit.Assert;
 
 public class FibonacciMemo extends Trackerd< Long, Integer > {
 	

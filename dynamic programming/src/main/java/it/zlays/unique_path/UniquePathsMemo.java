@@ -14,9 +14,9 @@ public class UniquePathsMemo extends Trackerd< Long, UniquePathInput > {
 	@Override
 	public Long solution( UniquePathInput arg ) {
 		
-		long[][] memo = new long[ arg.getX( ) ][];
+		long[][] memo = new long[ arg.getX( ) + 1 ][];
 		for ( int i = 0; i < memo.length; i++ ) {
-			memo[ i ] = new long[ arg.getY( ) ];
+			memo[ i ] = new long[ arg.getY( ) + 1 ];
 		}
 		
 		return uniquePaths( arg.getX( ), arg.getY( ), memo );

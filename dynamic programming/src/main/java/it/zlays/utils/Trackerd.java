@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Arrays;
 
 @Data
@@ -12,28 +14,34 @@ import java.util.Arrays;
 public abstract class Trackerd< O, I > {
 	private static final Logger logger = LogManager.getLogger( Trackerd.class );
 	
-	protected long start;
-	protected long end;
+	protected Instant start;
 	
 	public void timeStart( ) {
-		this.start = System.currentTimeMillis( );
+		this.start = Instant.now( );
 	}
 	
-	public long timeStop( ) {
-		this.end = System.currentTimeMillis( );
-		return this.end - this.start;
+	public Duration timeStop( ) {
+		return Duration.between( this.start, Instant.now( ) );
 	}
 	
 	public O run( I arg ) {
+		String tmpValue;
+		if ( arg instanceof int[][] )
+			tmpValue = Arrays.deepToString( ( Object[] ) arg );
+		else if ( arg instanceof int[] )
+			tmpValue = Arrays.toString( ( int[] ) arg );
+		else
+			tmpValue = String.valueOf( arg );
+		
 		this.timeStart( );
 		O result = this.solution( arg );
-		long timeElapsed = this.timeStop( );
+		Duration timeElapsed = this.timeStop( );
 		
 		System.out.printf(
-				"(%s) Value: %s needs: %s ms%n", this.getType( ),
-				arg instanceof int[][] ? Arrays.deepToString( ( Object[] ) arg ) : arg,
-				timeElapsed );
-		
+				"(%s) Value: %s Time: %s ns \n",
+				this.getType( ),
+				tmpValue,
+				timeElapsed.toNanos( ) );
 		
 		return result;
 	}

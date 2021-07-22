@@ -1,30 +1,40 @@
 import it.zlays.fibonacci.FibonacciBase;
+import it.zlays.fibonacci.FibonacciBottomUp;
 import it.zlays.fibonacci.FibonacciMemo;
-import org.junit.Assert;
 import org.junit.Test;
+import utils.BasicTest;
+import utils.TestCase;
 
-public class FibonacciTest {
+public class FibonacciTest extends BasicTest< Long, Integer > {
 	
 	@Test
 	public void fibonacciBaseTest( ) {
-		FibonacciBase fibonacciBase = new FibonacciBase( );
-		Assert.assertEquals( 0, ( long ) fibonacciBase.run( 0 ) );
-		Assert.assertEquals( 1, ( long ) fibonacciBase.run( 1 ) );
-		Assert.assertEquals( 8, ( long ) fibonacciBase.run( 6 ) );
-		Assert.assertEquals( 610, ( long ) fibonacciBase.run( 15 ) );
-		Assert.assertEquals( 832040, ( long ) fibonacciBase.run( 30 ) );
-		Assert.assertEquals( 1134903170, ( long ) fibonacciBase.run( 45 ) );
+		FibonacciBase fibonacci = new FibonacciBase( );
+		this.equalsAll( fibonacci );
 	}
 	
 	@Test
 	public void fibonacciMemoTest( ) {
-		FibonacciMemo fibonacciMemo = new FibonacciMemo( );
-		Assert.assertEquals( 0, ( long ) fibonacciMemo.run( 0 ) );
-		Assert.assertEquals( 1, ( long ) fibonacciMemo.run( 1 ) );
-		Assert.assertEquals( 8, ( long ) fibonacciMemo.run( 6 ) );
-		Assert.assertEquals( 610, ( long ) fibonacciMemo.run( 15 ) );
-		Assert.assertEquals( 832040, ( long ) fibonacciMemo.run( 30 ) );
-		Assert.assertEquals( 1134903170, ( long ) fibonacciMemo.run( 45 ) );
+		FibonacciMemo fibonacci = new FibonacciMemo( );
+		this.equalsAll( fibonacci );
 	}
 	
+	@Test
+	public void fibonacciBottomUpTest( ) {
+		FibonacciBottomUp fibonacci = new FibonacciBottomUp( );
+		this.equalsAll( fibonacci );
+	}
+	
+	
+	@Override
+	public TestCase< Long, Integer >[] getCases( ) {
+		return new TestCase[] {
+				new TestCase<>( 0L, 0 ),
+				new TestCase<>( 1L, 1 ),
+				new TestCase<>( 8L, 6 ),
+				new TestCase<>( 610L, 15 ),
+				new TestCase<>( 832040L, 30 ),
+				new TestCase<>( 1134903170L, 45 )
+		};
+	}
 }

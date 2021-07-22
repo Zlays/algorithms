@@ -1,9 +1,6 @@
 package it.zlays.unique_path_obstacle;
 
-import it.zlays.models.UniquePathInput;
 import it.zlays.utils.Trackerd;
-
-import java.util.Arrays;
 
 public class UniquePathsObstacleBase extends Trackerd< Long, int[][] > {
 	

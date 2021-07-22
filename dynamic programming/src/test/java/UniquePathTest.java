@@ -1,36 +1,38 @@
-import it.zlays.unique_path.UniquePathsBase;
-import it.zlays.unique_path.UniquePathsMemo;
 import it.zlays.models.UniquePathInput;
+import it.zlays.unique_path.UniquePathsBase;
 import it.zlays.unique_path.UniquePathsBottomUp;
-import org.junit.Assert;
+import it.zlays.unique_path.UniquePathsMemo;
 import org.junit.Test;
+import utils.BasicTest;
+import utils.TestCase;
 
-public class UniquePathTest {
+public class UniquePathTest extends BasicTest< Long, UniquePathInput > {
 	
 	@Test
 	public void uniquePathBaseTest( ) {
-		UniquePathsBase uniquePathBase = new UniquePathsBase( );
-		Assert.assertEquals( 6, ( long ) uniquePathBase.run( new UniquePathInput( 3, 3 ) ) );
-		Assert.assertEquals( 28, ( long ) uniquePathBase.run( new UniquePathInput( 3, 7 ) ) );
-		Assert.assertEquals( 40116600, ( long ) uniquePathBase.run( new UniquePathInput( 15, 15 ) ) );
-		Assert.assertEquals( 818809200, ( long ) uniquePathBase.run( new UniquePathInput( 15, 20 ) ) );
+		UniquePathsBase uniquePaths = new UniquePathsBase( );
+		this.equalsAll( uniquePaths );
 	}
 	
 	@Test
 	public void uniquePathMemoTest( ) {
-		UniquePathsMemo uniquePathMemo = new UniquePathsMemo( );
-		Assert.assertEquals( 6, ( long ) uniquePathMemo.run( new UniquePathInput( 3, 3 ) ) );
-		Assert.assertEquals( 28, ( long ) uniquePathMemo.run( new UniquePathInput( 3, 7 ) ) );
-		Assert.assertEquals( 40116600, ( long ) uniquePathMemo.run( new UniquePathInput( 15, 15 ) ) );
-		Assert.assertEquals( 818809200, ( long ) uniquePathMemo.run( new UniquePathInput( 15, 20 ) ) );
+		UniquePathsMemo uniquePaths = new UniquePathsMemo( );
+		this.equalsAll( uniquePaths );
 	}
 	
 	@Test
 	public void uniquePathBottomUpTest( ) {
-		UniquePathsBottomUp uniquePathsBottomUp = new UniquePathsBottomUp( );
-		Assert.assertEquals( 6, ( long ) uniquePathsBottomUp.run( new UniquePathInput( 3, 3 ) ) );
-		Assert.assertEquals( 28, ( long ) uniquePathsBottomUp.run( new UniquePathInput( 3, 7 ) ) );
-		Assert.assertEquals( 40116600, ( long ) uniquePathsBottomUp.run( new UniquePathInput( 15, 15 ) ) );
-		Assert.assertEquals( 818809200, ( long ) uniquePathsBottomUp.run( new UniquePathInput( 15, 20 ) ) );
+		UniquePathsBottomUp uniquePaths = new UniquePathsBottomUp( );
+		this.equalsAll( uniquePaths );
+	}
+	
+	@Override
+	public TestCase< Long, UniquePathInput >[] getCases( ) {
+		return new TestCase[] {
+				new TestCase( 6L, new UniquePathInput( 3, 3 ) ),
+				new TestCase( 28L, new UniquePathInput( 3, 7 ) ),
+				new TestCase( 40116600L, new UniquePathInput( 15, 15 ) ),
+				new TestCase( 818809200L, new UniquePathInput( 15, 20 ) )
+		};
 	}
 }
