@@ -2,7 +2,7 @@ package it.zlays.medium.unique_path_obstacle;
 
 import it.zlays.utils.Trackerd;
 
-public class UniquePathsObstacleMemo extends Trackerd< Long, int[][] > {
+public class UniquePathsObstacleUpBottom extends Trackerd< Long, int[][] > {
 	
 	public Long uniquePathsWithObstacles( int[][] obstacleGrid ) {
 		int x = obstacleGrid.length;
@@ -39,6 +39,6 @@ public class UniquePathsObstacleMemo extends Trackerd< Long, int[][] > {
 	
 	@Override
 	public String getType( ) {
-		return "MEMO";
+		return "UP BOTTOM";
 	}
 }

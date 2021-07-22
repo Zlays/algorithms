@@ -1,23 +1,17 @@
 package medium;
 
-import it.zlays.medium.house_robber.HouseRobberBase;
 import it.zlays.medium.house_robber.HouseRobberBottomUp;
-import it.zlays.medium.house_robber.HouseRobberMemo;
+import it.zlays.medium.house_robber.HouseRobberUpBottom;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;
 
 public class HouseRobberTest extends BasicTest< Long, int[] > {
 	
+
 	@Test
-	public void houseRobberBaseTest( ) {
-		HouseRobberBase houseRobber = new HouseRobberBase( );
-		this.equalsAll( houseRobber );
-	}
-	
-	@Test
-	public void houseRobberMemoTest( ) {
-		HouseRobberMemo houseRobber = new HouseRobberMemo( );
+	public void houseRobberUpBottomTest( ) {
+		HouseRobberUpBottom houseRobber = new HouseRobberUpBottom( );
 		this.equalsAll( houseRobber );
 	}
 	

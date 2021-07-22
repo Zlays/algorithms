@@ -3,7 +3,7 @@ package it.zlays.medium.unique_path;
 import it.zlays.models.UniquePathInput;
 import it.zlays.utils.Trackerd;
 
-public class UniquePathsMemo extends Trackerd< Long, UniquePathInput > {
+public class UniquePathsUpBottom extends Trackerd< Long, UniquePathInput > {
 	
 	public Long uniquePaths( int x, int y, long[][] memo ) {
 		if ( x == 1 || y == 1 ) return 1L;
@@ -24,6 +24,6 @@ public class UniquePathsMemo extends Trackerd< Long, UniquePathInput > {
 	
 	@Override
 	public String getType( ) {
-		return "MEMO";
+		return "UP BOTTOM";
 	}
 }

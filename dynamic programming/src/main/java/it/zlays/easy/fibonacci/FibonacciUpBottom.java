@@ -2,7 +2,7 @@ package it.zlays.easy.fibonacci;
 
 import it.zlays.utils.Trackerd;
 
-public class FibonacciMemo extends Trackerd< Long, Integer > {
+public class FibonacciUpBottom extends Trackerd< Long, Integer > {
 	
 	public static long fibonacciMemo( Integer value, long[] memo ) {
 		if ( value == 0 ) return 0;
@@ -19,7 +19,7 @@ public class FibonacciMemo extends Trackerd< Long, Integer > {
 	
 	@Override
 	public String getType( ) {
-		return "MEMO";
+		return "UP BOTTOM";
 	}
 	
 }

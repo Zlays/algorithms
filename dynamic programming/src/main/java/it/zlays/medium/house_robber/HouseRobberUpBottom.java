@@ -2,7 +2,7 @@ package it.zlays.medium.house_robber;
 
 import it.zlays.utils.Trackerd;
 
-public class HouseRobberMemo extends Trackerd< Long, int[] > {
+public class HouseRobberUpBottom extends Trackerd< Long, int[] > {
 	
 	public Long houseRobber( int[] arg ) {
 		int x = arg.length;
@@ -30,6 +30,6 @@ public class HouseRobberMemo extends Trackerd< Long, int[] > {
 	
 	@Override
 	public String getType( ) {
-		return "MEMO";
+		return "UP BOTTOM";
 	}
 }

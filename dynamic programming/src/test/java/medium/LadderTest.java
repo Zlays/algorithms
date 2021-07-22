@@ -1,7 +1,6 @@
 package medium;
 
-import it.zlays.medium.ladder.LadderBase;
-import it.zlays.medium.ladder.LadderMemo;
+import it.zlays.medium.ladder.LadderUpBottom;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;
@@ -9,14 +8,8 @@ import utils.TestCase;
 public class LadderTest extends BasicTest< Long, Integer > {
 	
 	@Test
-	public void LadderBaseTest( ) {
-		LadderBase ladder = new LadderBase( );
-		this.equalsAll( ladder );
-	}
-	
-	@Test
-	public void LadderMemoTest( ) {
-		LadderMemo ladder = new LadderMemo( );
+	public void LadderUpBottomTest( ) {
+		LadderUpBottom ladder = new LadderUpBottom( );
 		this.equalsAll( ladder );
 	}
 	

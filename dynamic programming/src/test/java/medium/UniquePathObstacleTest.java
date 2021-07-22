@@ -1,23 +1,17 @@
 package medium;
 
-import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBase;
 import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBottomUp;
-import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleMemo;
+import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleUpBottom;
 import org.junit.Test;
 import utils.BasicTest;
 import utils.TestCase;
 
 public class UniquePathObstacleTest extends BasicTest< Long, int[][] > {
+
 	
 	@Test
-	public void uniquePathObstacleBaseTest( ) {
-		UniquePathsObstacleBase uniquePathsObstacle = new UniquePathsObstacleBase( );
-		this.equalsAll( uniquePathsObstacle );
-	}
-	
-	@Test
-	public void uniquePathObstacleMemoTest( ) {
-		UniquePathsObstacleMemo uniquePathsObstacle = new UniquePathsObstacleMemo( );
+	public void uniquePathObstacleUpBottomTest( ) {
+		UniquePathsObstacleUpBottom uniquePathsObstacle = new UniquePathsObstacleUpBottom( );
 		this.equalsAll( uniquePathsObstacle );
 	}
 	
