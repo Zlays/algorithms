@@ -11,6 +11,8 @@ import java.util.Arrays;
 @NoArgsConstructor
 public abstract class Trackerd< O, I > {
 	
+	private Runtime runtime = this.runtime.getRuntime();
+	
 	protected Instant start;
 	
 	public void timeStart( ) {
@@ -30,15 +32,25 @@ public abstract class Trackerd< O, I > {
 		else
 			tmpValue = String.valueOf( arg );
 		
+		//memory
+		long usedMemoryBefore = this.runtime.totalMemory() - this.runtime.freeMemory();
+		
+		//time
 		this.timeStart( );
 		O result = this.solution( arg );
+		//time
 		Duration timeElapsed = this.timeStop( );
 		
+		//memory
+		long usedMemoryAfter = this.runtime.totalMemory() - this.runtime.freeMemory();
+		this.runtime.gc();
+		
 		System.out.printf(
-				"(%s) Value: %s Time: %s ns \n",
+				"(%s) Value: %s Time: %s ns Memory: %s\n",
 				this.getType( ),
 				tmpValue,
-				timeElapsed.toNanos( ) );
+				timeElapsed.toNanos( ),
+				usedMemoryAfter-usedMemoryBefore);
 		
 		return result;
 	}
