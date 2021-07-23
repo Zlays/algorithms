@@ -2,8 +2,6 @@ package it.zlays.utils;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -12,7 +10,6 @@ import java.util.Arrays;
 @Data
 @NoArgsConstructor
 public abstract class Trackerd< O, I > {
-	private static final Logger logger = LogManager.getLogger( Trackerd.class );
 	
 	protected Instant start;
 	
