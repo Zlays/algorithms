@@ -1,9 +1,9 @@
 package it.zlays.medium.unique_path;
 
 import it.zlays.models.UniquePathInput;
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class UniquePathsBottomUp extends Trackerd< Long, UniquePathInput > {
+public class UniquePathsBottomUp extends Tracker< Long, UniquePathInput > {
 	
 	@Override
 	public Long solution( UniquePathInput arg ) {

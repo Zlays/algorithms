@@ -1,8 +1,8 @@
 package it.zlays.easy.counting_bits;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class CountingBitsUpBottom extends Trackerd< int[], Integer > {
+public class CountingBitsUpBottom extends Tracker< int[], Integer > {
 	
 	public int[] countBits( int n ) {
 		int[] result = new int[ n + 1 ];

@@ -1,9 +1,9 @@
 package it.zlays.medium.unique_path;
 
 import it.zlays.models.UniquePathInput;
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class UniquePathsUpBottom extends Trackerd< Long, UniquePathInput > {
+public class UniquePathsUpBottom extends Tracker< Long, UniquePathInput > {
 	
 	public Long uniquePaths( int x, int y, long[][] memo ) {
 		if ( x == 1 || y == 1 ) return 1L;

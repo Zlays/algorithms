@@ -1,8 +1,8 @@
 package it.zlays.medium.unique_path_obstacle;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class UniquePathsObstacleBottomUp extends Trackerd< Long, int[][] > {
+public class UniquePathsObstacleBottomUp extends Tracker< Long, int[][] > {
 	
 	public Long uniquePathsWithObstacles( int[][] obstacleGrid ) {
 		int x = obstacleGrid.length;

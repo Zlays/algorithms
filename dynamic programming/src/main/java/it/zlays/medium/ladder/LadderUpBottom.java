@@ -1,8 +1,8 @@
 package it.zlays.medium.ladder;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class LadderUpBottom extends Trackerd< Long, Integer > {
+public class LadderUpBottom extends Tracker< Long, Integer > {
 	
 	public static long ladder( int length, long[] memo ) {
 		if ( length < 0 ) return 0;

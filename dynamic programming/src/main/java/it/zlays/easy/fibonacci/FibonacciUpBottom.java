@@ -1,8 +1,8 @@
 package it.zlays.easy.fibonacci;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class FibonacciUpBottom extends Trackerd< Long, Integer > {
+public class FibonacciUpBottom extends Tracker< Long, Integer > {
 	
 	public static long fibonacciMemo( Integer value, long[] memo ) {
 		if ( value == 0 ) return 0;

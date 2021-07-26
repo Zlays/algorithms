@@ -1,8 +1,8 @@
 package it.zlays.medium.house_robber;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class HouseRobberUpBottom extends Trackerd< Long, int[] > {
+public class HouseRobberUpBottom extends Tracker< Long, int[] > {
 	
 	public Long houseRobber( int[] arg ) {
 		int x = arg.length;

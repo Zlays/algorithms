@@ -1,8 +1,8 @@
 package it.zlays.easy.divisor_game;
 
-import it.zlays.utils.Trackerd;
+import it.zlays.utils.Tracker;
 
-public class DivisorGame extends Trackerd< Boolean, Integer > {
+public class DivisorGame extends Tracker< Boolean, Integer > {
 	
 	public boolean divisorGame( int n ) {
 		return ( n % 2 ) == 0;

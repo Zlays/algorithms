@@ -9,9 +9,9 @@ import java.util.Arrays;
 
 @Data
 @NoArgsConstructor
-public abstract class Trackerd< O, I > {
+public abstract class Tracker< O, I > {
 	
-	private Runtime runtime = this.runtime.getRuntime();
+	private Runtime runtime = Runtime.getRuntime( );
 	
 	protected Instant start;
 	
@@ -32,8 +32,9 @@ public abstract class Trackerd< O, I > {
 		else
 			tmpValue = String.valueOf( arg );
 		
+		this.runtime.gc( );
 		//memory
-		long usedMemoryBefore = this.runtime.totalMemory() - this.runtime.freeMemory();
+		long usedMemoryBefore = this.runtime.totalMemory( ) - this.runtime.freeMemory( );
 		
 		//time
 		this.timeStart( );
@@ -42,15 +43,15 @@ public abstract class Trackerd< O, I > {
 		Duration timeElapsed = this.timeStop( );
 		
 		//memory
-		long usedMemoryAfter = this.runtime.totalMemory() - this.runtime.freeMemory();
-		this.runtime.gc();
+		long usedMemoryAfter = this.runtime.totalMemory( ) - this.runtime.freeMemory( );
+		long usedMemory = usedMemoryAfter - usedMemoryBefore;
 		
 		System.out.printf(
-				"(%s) Value: %s Time: %s ns Memory: %s\n",
+				"(%s) Value: %s Time: %s ns Memory: %s %n",
 				this.getType( ),
 				tmpValue,
 				timeElapsed.toNanos( ),
-				usedMemoryAfter-usedMemoryBefore);
+				usedMemory );
 		
 		return result;
 	}
