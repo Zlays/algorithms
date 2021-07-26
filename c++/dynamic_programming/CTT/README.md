@@ -1,1 +1,0 @@
-[link](https://training.olinfo.it/#/task/cct/statement)

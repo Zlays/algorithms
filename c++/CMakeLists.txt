@@ -4,4 +4,4 @@ project(c__)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(c__
-        dynamic_programming/CTT/ctt.cpp)
+        dynamic_programming/ctt/ctt.cpp)
