@@ -54,3 +54,5 @@ target/
 **/cmake-build-debug/**
 *.cmake
 *.bin
+**/build/**
+**/.vscode/**
