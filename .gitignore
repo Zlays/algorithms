@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+target/
 
 # Test binary, built with `go test -c`
 *.test
@@ -13,3 +14,43 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#Custom
+**/.idea/**
+**/cmake-build-debug/**
+*.cmake
+*.bin
