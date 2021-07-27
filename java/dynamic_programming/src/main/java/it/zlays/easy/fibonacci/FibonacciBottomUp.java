@@ -4,7 +4,7 @@ import it.zlays.utils.Tracker;
 
 public class FibonacciBottomUp extends Tracker< Long, Integer > {
 	
-	public static Long fibonacciBase( int value ) {
+	public Long fibonacci( int value ) {
 		
 		if ( value == 0 ) return 0L;
 		if ( value == 1 ) return 1L;
@@ -22,7 +22,7 @@ public class FibonacciBottomUp extends Tracker< Long, Integer > {
 	
 	@Override
 	public Long solution( Integer arg ) {
-		return fibonacciBase( arg );
+		return fibonacci( arg );
 	}
 	
 	@Override

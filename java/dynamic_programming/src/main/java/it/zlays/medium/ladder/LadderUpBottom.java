@@ -9,7 +9,9 @@ public class LadderUpBottom extends Tracker< Long, Integer > {
 		if ( length == 0 ) return 1;
 		
 		if ( memo[ length ] == 0L )
-			memo[ length ] = ladder( length - 1, memo ) + ladder( length - 2, memo ) + ladder( length - 3, memo );
+			memo[ length ] = ladder( length - 1, memo )
+					+ ladder( length - 2, memo )
+					+ ladder( length - 3, memo );
 		return memo[ length ];
 	}
 	
