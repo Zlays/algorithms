@@ -8,7 +8,7 @@ import utils.TestCase;
 
 public class HouseRobberTest extends BasicTest< Long, int[] > {
 	
-
+	
 	@Test
 	public void houseRobberUpBottomTest( ) {
 		HouseRobberUpBottom houseRobber = new HouseRobberUpBottom( );

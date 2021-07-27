@@ -11,9 +11,8 @@ import java.util.Arrays;
 @NoArgsConstructor
 public abstract class Tracker< O, I > {
 	
-	private Runtime runtime = Runtime.getRuntime( );
-	
 	protected Instant start;
+	private Runtime runtime = Runtime.getRuntime( );
 	
 	public void timeStart( ) {
 		this.start = Instant.now( );

@@ -7,7 +7,7 @@ import utils.BasicTest;
 import utils.TestCase;
 
 public class UniquePathObstacleTest extends BasicTest< Long, int[][] > {
-
+	
 	
 	@Test
 	public void uniquePathObstacleUpBottomTest( ) {

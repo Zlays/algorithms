@@ -14,7 +14,6 @@ public class StoneGameBottomUp extends Tracker< Boolean, int[] > {
 		memo[ 0 ][ 0 ] = Math.max( piles[ 0 ], piles[ x - 1 ] );
 		memo[ 0 ][ 1 ] = memo[ 0 ][ 0 ] + piles[ x - 2 ];
 		memo[ 1 ][ 0 ] = memo[ 0 ][ 0 ] + piles[ 2 ];
-		;
 		
 		for ( int i = 1; i < x; i++ ) {
 			for ( int j = 1; j < x; j++ ) {
