@@ -1,6 +1,7 @@
 package it.zlays.easy.fibonacci;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class FibonacciUpBottom extends Tracker< Long, Integer > {
 	

@@ -1,6 +1,7 @@
 package it.zlays.medium.ladder;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class LadderUpBottom extends Tracker< Long, Integer > {
 	

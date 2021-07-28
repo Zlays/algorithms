@@ -2,10 +2,10 @@ package easy;
 
 import it.zlays.easy.divisor_game.DivisorGame;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 
-public class DivisorGameTest extends BasicTest< Boolean, Integer > {
+public class DivisorGameTest extends SimpleTest< Boolean, Integer > {
 	
 	@Test
 	public void divisorGameTest( ) {

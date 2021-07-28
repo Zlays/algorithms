@@ -3,10 +3,10 @@ package easy;
 import it.zlays.easy.fibonacci.FibonacciBottomUp;
 import it.zlays.easy.fibonacci.FibonacciUpBottom;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 
-public class FibonacciTest extends BasicTest< Long, Integer > {
+public class FibonacciTest extends SimpleTest< Long, Integer > {
 	
 	@Test
 	public void fibonacciUpBottomTest( ) {

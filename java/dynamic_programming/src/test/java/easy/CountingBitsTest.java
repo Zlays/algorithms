@@ -3,10 +3,10 @@ package easy;
 import it.zlays.easy.counting_bits.CountingBitsBottomUp;
 import it.zlays.easy.counting_bits.CountingBitsUpBottom;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 
-public class CountingBitsTest extends BasicTest< int[], Integer > {
+public class CountingBitsTest extends SimpleTest< int[], Integer > {
 	
 	@Test
 	public void countingBitsBottomUp( ) {

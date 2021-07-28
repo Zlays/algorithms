@@ -2,11 +2,11 @@ package medium;
 
 import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBottomUp;
 import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleUpBottom;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
 
-public class UniquePathObstacleTest extends BasicTest< Long, int[][] > {
+public class UniquePathObstacleTest extends SimpleTest< Long, int[][] > {
 	
 	
 	@Test

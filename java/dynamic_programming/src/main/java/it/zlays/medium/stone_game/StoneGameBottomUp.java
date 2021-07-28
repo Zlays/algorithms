@@ -1,6 +1,7 @@
 package it.zlays.medium.stone_game;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class StoneGameBottomUp extends Tracker< Boolean, int[] > {
 	

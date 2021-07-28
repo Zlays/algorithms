@@ -1,4 +1,4 @@
-package utils;
+package it.zlays.test;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -2,11 +2,11 @@ package medium;
 
 import it.zlays.medium.house_robber.HouseRobberBottomUp;
 import it.zlays.medium.house_robber.HouseRobberUpBottom;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
 
-public class HouseRobberTest extends BasicTest< Long, int[] > {
+public class HouseRobberTest extends SimpleTest< Long, int[] > {
 	
 	
 	@Test

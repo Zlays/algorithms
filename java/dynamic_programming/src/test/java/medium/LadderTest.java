@@ -1,11 +1,11 @@
 package medium;
 
 import it.zlays.medium.ladder.LadderUpBottom;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
 
-public class LadderTest extends BasicTest< Long, Integer > {
+public class LadderTest extends SimpleTest< Long, Integer > {
 	
 	@Test
 	public void LadderUpBottomTest( ) {

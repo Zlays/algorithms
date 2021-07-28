@@ -1,6 +1,7 @@
 package it.zlays.easy.divisor_game;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class DivisorGame extends Tracker< Boolean, Integer > {
 	

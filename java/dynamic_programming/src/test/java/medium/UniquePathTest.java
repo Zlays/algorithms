@@ -2,12 +2,12 @@ package medium;
 
 import it.zlays.medium.unique_path.UniquePathsBottomUp;
 import it.zlays.medium.unique_path.UniquePathsUpBottom;
-import it.zlays.models.UniquePathInput;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
+import it.zlays.utils.models.UniquePathInput;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
 
-public class UniquePathTest extends BasicTest< Long, UniquePathInput > {
+public class UniquePathTest extends SimpleTest< Long, UniquePathInput > {
 	
 	
 	@Test

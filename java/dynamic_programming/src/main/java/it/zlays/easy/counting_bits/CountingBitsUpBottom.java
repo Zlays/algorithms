@@ -1,6 +1,7 @@
 package it.zlays.easy.counting_bits;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class CountingBitsUpBottom extends Tracker< int[], Integer > {
 	

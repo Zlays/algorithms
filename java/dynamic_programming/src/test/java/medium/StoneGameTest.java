@@ -2,11 +2,11 @@ package medium;
 
 import it.zlays.medium.stone_game.StoneGameBottomUp;
 import it.zlays.medium.stone_game.StoneGameUpBottom;
+import it.zlays.test.SimpleTest;
+import it.zlays.test.TestCase;
 import org.junit.Test;
-import utils.BasicTest;
-import utils.TestCase;
 
-public class StoneGameTest extends BasicTest< Boolean, int[] > {
+public class StoneGameTest extends SimpleTest< Boolean, int[] > {
 	
 	@Test
 	public void stoneGameUpBottom( ) {

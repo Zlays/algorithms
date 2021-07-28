@@ -1,6 +1,6 @@
-package utils;
+package it.zlays.test;
 
-import it.zlays.utils.Tracker;
+import it.zlays.Tracker;
 import lombok.Getter;
 import org.junit.Assert;
 
@@ -10,7 +10,7 @@ import java.util.TreeSet;
 
 
 @Getter
-public abstract class BasicTest< O, I > {
+public abstract class SimpleTest< O, I > {
 	
 	public void equalsAll( Tracker< O, I > algorithm ) {
 		for ( TestCase< O, I > testCase : this.getCases( ) ) {

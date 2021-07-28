@@ -1,6 +1,7 @@
 package it.zlays.medium.unique_path_obstacle;
 
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
 
 public class UniquePathsObstacleUpBottom extends Tracker< Long, int[][] > {
 	

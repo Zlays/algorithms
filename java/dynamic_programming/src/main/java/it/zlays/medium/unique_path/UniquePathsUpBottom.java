@@ -1,7 +1,8 @@
 package it.zlays.medium.unique_path;
 
-import it.zlays.models.UniquePathInput;
-import it.zlays.utils.Tracker;
+
+import it.zlays.Tracker;
+import it.zlays.utils.models.UniquePathInput;
 
 public class UniquePathsUpBottom extends Tracker< Long, UniquePathInput > {
 	
