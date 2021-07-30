@@ -3,7 +3,7 @@ package it.zlays.easy.counting_bits;
 
 import it.zlays.Tracker;
 
-public class CountingBitsUpBottom extends Tracker< int[], Integer > {
+public class CountingBitsTopDown extends Tracker< int[], Integer > {
 	
 	public int[] countBits( int n ) {
 		int[] result = new int[ n + 1 ];
@@ -30,6 +30,6 @@ public class CountingBitsUpBottom extends Tracker< int[], Integer > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }

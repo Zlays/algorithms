@@ -1,7 +1,7 @@
 package easy;
 
 import it.zlays.easy.counting_bits.CountingBitsBottomUp;
-import it.zlays.easy.counting_bits.CountingBitsUpBottom;
+import it.zlays.easy.counting_bits.CountingBitsTopDown;
 import org.junit.Test;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
@@ -15,8 +15,8 @@ public class CountingBitsTest extends SimpleTest< int[], Integer > {
 	}
 	
 	@Test
-	public void countingBitsUpBottom( ) {
-		CountingBitsUpBottom countingBottomUp = new CountingBitsUpBottom( );
+	public void countingBitsTopDown( ) {
+		CountingBitsTopDown countingBottomUp = new CountingBitsTopDown( );
 		this.equalsAll( countingBottomUp );
 	}
 	

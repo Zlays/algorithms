@@ -1,7 +1,7 @@
 package easy;
 
 import it.zlays.easy.fibonacci.FibonacciBottomUp;
-import it.zlays.easy.fibonacci.FibonacciUpBottom;
+import it.zlays.easy.fibonacci.FibonacciTopDown;
 import org.junit.Test;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
@@ -9,8 +9,8 @@ import it.zlays.test.TestCase;
 public class FibonacciTest extends SimpleTest< Long, Integer > {
 	
 	@Test
-	public void fibonacciUpBottomTest( ) {
-		FibonacciUpBottom fibonacci = new FibonacciUpBottom( );
+	public void fibonacciTopDownTest( ) {
+		FibonacciTopDown fibonacci = new FibonacciTopDown( );
 		this.equalsAll( fibonacci );
 	}
 	

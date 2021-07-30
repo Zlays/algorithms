@@ -6,7 +6,7 @@ import it.zlays.Tracker;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenerateParenthesisUpBottom extends Tracker< List< String >, Integer > {
+public class GenerateParenthesisTopDown extends Tracker< List< String >, Integer > {
 	
 	public List< String > generateParenthesis( int n ) {
 		List< String > result = new ArrayList( );
@@ -35,6 +35,6 @@ public class GenerateParenthesisUpBottom extends Tracker< List< String >, Intege
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }

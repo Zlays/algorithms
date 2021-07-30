@@ -3,7 +3,7 @@ package it.zlays.easy.fibonacci;
 
 import it.zlays.Tracker;
 
-public class FibonacciUpBottom extends Tracker< Long, Integer > {
+public class FibonacciTopDown extends Tracker< Long, Integer > {
 	
 	public long fibonacci( Integer value, long[] memo ) {
 		if ( value == 0 ) return 0;
@@ -20,7 +20,7 @@ public class FibonacciUpBottom extends Tracker< Long, Integer > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 	
 }

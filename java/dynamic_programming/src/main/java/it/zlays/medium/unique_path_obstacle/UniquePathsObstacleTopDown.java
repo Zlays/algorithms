@@ -3,7 +3,7 @@ package it.zlays.medium.unique_path_obstacle;
 
 import it.zlays.Tracker;
 
-public class UniquePathsObstacleUpBottom extends Tracker< Long, int[][] > {
+public class UniquePathsObstacleTopDown extends Tracker< Long, int[][] > {
 	
 	public Long uniquePathsWithObstacles( int[][] obstacleGrid ) {
 		int x = obstacleGrid.length;
@@ -40,6 +40,6 @@ public class UniquePathsObstacleUpBottom extends Tracker< Long, int[][] > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }

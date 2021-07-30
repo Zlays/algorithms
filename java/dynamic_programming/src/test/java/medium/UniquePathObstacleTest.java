@@ -1,7 +1,7 @@
 package medium;
 
 import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleBottomUp;
-import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleUpBottom;
+import it.zlays.medium.unique_path_obstacle.UniquePathsObstacleTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import org.junit.Test;
@@ -10,8 +10,8 @@ public class UniquePathObstacleTest extends SimpleTest< Long, int[][] > {
 	
 	
 	@Test
-	public void uniquePathObstacleUpBottomTest( ) {
-		UniquePathsObstacleUpBottom uniquePathsObstacle = new UniquePathsObstacleUpBottom( );
+	public void uniquePathObstacleTopDownTest( ) {
+		UniquePathsObstacleTopDown uniquePathsObstacle = new UniquePathsObstacleTopDown( );
 		this.equalsAll( uniquePathsObstacle );
 	}
 	

@@ -3,7 +3,7 @@ package it.zlays.medium.stone_game;
 
 import it.zlays.Tracker;
 
-public class StoneGameUpBottom extends Tracker< Boolean, int[] > {
+public class StoneGameTopDown extends Tracker< Boolean, int[] > {
 	
 	public boolean stoneGame( int[] piles ) {
 		int x = piles.length;
@@ -51,6 +51,6 @@ public class StoneGameUpBottom extends Tracker< Boolean, int[] > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }

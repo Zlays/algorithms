@@ -1,6 +1,6 @@
 package medium;
 
-import it.zlays.medium.ladder.LadderUpBottom;
+import it.zlays.medium.ladder.LadderTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import org.junit.Test;
@@ -8,8 +8,8 @@ import org.junit.Test;
 public class LadderTest extends SimpleTest< Long, Integer > {
 	
 	@Test
-	public void LadderUpBottomTest( ) {
-		LadderUpBottom ladder = new LadderUpBottom( );
+	public void LadderTopDownTest( ) {
+		LadderTopDown ladder = new LadderTopDown( );
 		this.equalsAll( ladder );
 	}
 	

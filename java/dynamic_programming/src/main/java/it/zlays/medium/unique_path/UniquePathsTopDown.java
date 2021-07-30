@@ -4,7 +4,7 @@ package it.zlays.medium.unique_path;
 import it.zlays.Tracker;
 import it.zlays.utils.models.UniquePathInput;
 
-public class UniquePathsUpBottom extends Tracker< Long, UniquePathInput > {
+public class UniquePathsTopDown extends Tracker< Long, UniquePathInput > {
 	
 	public Long uniquePaths( int x, int y, long[][] memo ) {
 		if ( x == 1 || y == 1 ) return 1L;
@@ -25,6 +25,6 @@ public class UniquePathsUpBottom extends Tracker< Long, UniquePathInput > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }

@@ -1,6 +1,6 @@
 package medium;
 
-import it.zlays.medium.generate_Parenthesis.GenerateParenthesisUpBottom;
+import it.zlays.medium.generate_Parenthesis.GenerateParenthesisTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import org.junit.Test;
@@ -11,8 +11,8 @@ import java.util.List;
 public class GenerateParentesisTest extends SimpleTest< List< String >, Integer > {
 	
 	@Test
-	public void generateParenthesisUpBottom( ) {
-		GenerateParenthesisUpBottom generateParenthesis = new GenerateParenthesisUpBottom( );
+	public void generateParenthesisTopDown( ) {
+		GenerateParenthesisTopDown generateParenthesis = new GenerateParenthesisTopDown( );
 		this.equalsAll( generateParenthesis );
 	}
 	

@@ -3,7 +3,7 @@ package it.zlays.medium.ladder;
 
 import it.zlays.Tracker;
 
-public class LadderUpBottom extends Tracker< Long, Integer > {
+public class LadderTopDown extends Tracker< Long, Integer > {
 	
 	public static long ladder( int length, long[] memo ) {
 		if ( length < 0 ) return 0;
@@ -24,7 +24,7 @@ public class LadderUpBottom extends Tracker< Long, Integer > {
 	
 	@Override
 	public String getType( ) {
-		return "UP BOTTOM";
+		return "TOP DOWN";
 	}
 }
 

@@ -1,7 +1,7 @@
 package medium;
 
 import it.zlays.medium.stone_game.StoneGameBottomUp;
-import it.zlays.medium.stone_game.StoneGameUpBottom;
+import it.zlays.medium.stone_game.StoneGameTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import org.junit.Test;
@@ -9,8 +9,8 @@ import org.junit.Test;
 public class StoneGameTest extends SimpleTest< Boolean, int[] > {
 	
 	@Test
-	public void stoneGameUpBottom( ) {
-		StoneGameUpBottom stoneGame = new StoneGameUpBottom( );
+	public void stoneGameTopDown( ) {
+		StoneGameTopDown stoneGame = new StoneGameTopDown( );
 		this.equalsAll( stoneGame );
 	}
 	

@@ -1,7 +1,7 @@
 package medium;
 
 import it.zlays.medium.house_robber.HouseRobberBottomUp;
-import it.zlays.medium.house_robber.HouseRobberUpBottom;
+import it.zlays.medium.house_robber.HouseRobberTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import org.junit.Test;
@@ -10,8 +10,8 @@ public class HouseRobberTest extends SimpleTest< Long, int[] > {
 	
 	
 	@Test
-	public void houseRobberUpBottomTest( ) {
-		HouseRobberUpBottom houseRobber = new HouseRobberUpBottom( );
+	public void houseRobberTopDownTest( ) {
+		HouseRobberTopDown houseRobber = new HouseRobberTopDown( );
 		this.equalsAll( houseRobber );
 	}
 	

@@ -1,7 +1,7 @@
 package medium;
 
 import it.zlays.medium.unique_path.UniquePathsBottomUp;
-import it.zlays.medium.unique_path.UniquePathsUpBottom;
+import it.zlays.medium.unique_path.UniquePathsTopDown;
 import it.zlays.test.SimpleTest;
 import it.zlays.test.TestCase;
 import it.zlays.utils.models.UniquePathInput;
@@ -11,8 +11,8 @@ public class UniquePathTest extends SimpleTest< Long, UniquePathInput > {
 	
 	
 	@Test
-	public void uniquePathUpBottomTest( ) {
-		UniquePathsUpBottom uniquePaths = new UniquePathsUpBottom( );
+	public void uniquePathTopDownTest( ) {
+		UniquePathsTopDown uniquePaths = new UniquePathsTopDown( );
 		this.equalsAll( uniquePaths );
 	}
 	
